@@ -38,8 +38,6 @@ done
 # set positional arguments in their proper place
 eval set -- "$PARAMS"
 
-echo "${PARAMS:1}"
-
 if [ ! -d "${PARAMS:1}" ]; then
 	echo "${PARAMS:1} directory does not exist!"
 	exit 1
